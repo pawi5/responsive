@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja Strona</title>
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+    
+    
+    body {
+      font-family: "Times New Roman", Times, serif;
+      margin: 0;
+      background-color: #e0e0e0;
+    }
+
+    
+
+    .header {
+      padding: 50px;
+      text-align: center;
+      background-color: lightblue;
+      color: darkblue;
+    }
+
+    .navbar {
+    display: grid;
+    background-color: #444;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .navbar a {
+      color: #ffffff;
+      text-align: center;
+      padding: 14px;
+      text-decoration: none;
+    }
+
+    .navbar a:hover {
+      background-color: rgb(41, 41, 41);
+      color: rgb(255, 255, 255);
+    }
+
+    .row {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .side {
+      
+      background-color: #f2f2f2;
+      padding: 10px;
+    }
+
+    .main {
+      
+      padding: 10px;
+      background-color: #fff;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: lightgray;
+    }
+
+    @media screen and (max-width: 700px) {
+        .row, .navbar {   
+            grid-template-columns: 1fr;
+        }
+    }
+    </style>
+    
+</head>
+<body>
+    
+    <div class="header">
+        <h1>Strona z paskami</h1>
+         <p>Zwykłe paski</p>
+    </div>
+    
+    
+    <div class="navbar">
+        <a href="#">Strona Główna Pasków</a>
+         <a href="#">Małe paski</a>
+         <a href="#">Duże paski</a>
+         <a href="#">Koniec</a>
+    </div>
+
+    
+    <div class="row">
+    <div class="side">
+            <h2>Małe paski</h2>
+    </div>
+
+    <div class="main">
+            <h2>Duże paski</h2>
+    </div>
+    
+</div >
+    
+    <div class="footer">
+        <p>Koniec</p>
+    </div>
+    
+</body>
+</html>
